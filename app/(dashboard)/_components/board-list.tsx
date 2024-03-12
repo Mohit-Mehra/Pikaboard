@@ -58,11 +58,11 @@ export const BoardList = ({ orgId, query }: BoardListProps) => {
             id={board._id}
             title={board.title}
             imageUrl={board.imageUrl}
-            authId={board.authId}
-            authName={board.authorName}
+            authorId={board.authId}
+            authorName={board.authorName}
             createdAt={board._creationTime}
             orgId={board.orgId}
-            isFavorite={false}
+            isFavorite={board.isFavorite}
           />
         ))}
       </div>
